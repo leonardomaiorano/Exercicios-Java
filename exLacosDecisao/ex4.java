@@ -8,17 +8,15 @@ public class ex4 {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		float numero, numQuadrado;
+		float numero;
 		
 		System.out.print("Entre com um número: ");
-		numero = leia.nextInt();
-		
-		numQuadrado = (numero * numero);
+		numero = leia.nextFloat();
 		
 		if((numero%2==0)) {
 			System.out.printf("O número "+numero+" é par e sua raíz quadrada é "+Math.sqrt(numero));
 		} else {
-			System.out.printf("O número "+numero+" é impar e elevado ao quadrado é "+numQuadrado);
+			System.out.printf("O número "+numero+" é impar e elevado ao quadrado é "+Math.pow(numero, 2));
 		}
 	}
 }

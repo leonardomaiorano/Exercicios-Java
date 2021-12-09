@@ -10,11 +10,11 @@ public class ex1 {
 		
 		int n1,n2,n3;
 		
-		System.out.print("Digite o número 1: ");
+		System.out.print("Digite o primeiro número: ");
 		n1 = leia.nextInt();
-		System.out.print("Digite o número 2: ");
+		System.out.print("Digite o segundo número: ");
 		n2 = leia.nextInt();
-		System.out.print("Digite o número 3: ");
+		System.out.print("Digite o terceiro: ");
 		n3 = leia.nextInt();
 		
 		if(n1 > n2 && n1 > n3) {
