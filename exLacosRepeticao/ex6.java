@@ -25,7 +25,7 @@ public class ex6 {
 
         } while(num!=0);
 
-        media=somaNum/cont;
+        media=(float)somaNum/cont;
         System.out.printf("A soma dos números multiplos de 3 é "+somaNum+" e sua média é de %.2f",media);
        
     }
