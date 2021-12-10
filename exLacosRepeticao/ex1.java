@@ -3,7 +3,7 @@ package exLacosRepeticao;
 public class ex1 {
     public static void main(String[] args) {
 
-        int num=1000;
+        int num;
 
         for(num=1000;num<=1999;num++)
         {
