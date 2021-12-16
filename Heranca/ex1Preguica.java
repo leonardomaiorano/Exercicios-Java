@@ -4,9 +4,9 @@ public class ex1Preguica extends ex1Animal {
 	
 	private boolean subirArvore;
 	
-	public ex1Preguica(String nome, String som, int idade, boolean subirArvore) {
+	public ex1Preguica(String nome, int idade, boolean subirArvore) {
 		
-		super(nome, som, idade);
+		super(nome, idade);
 		this.subirArvore=subirArvore;
 		
 	}
@@ -26,7 +26,11 @@ public class ex1Preguica extends ex1Animal {
 	}
 	
 	public void imprimirInfo() {
-		System.out.println("\n---Dados da Preguiça---\nNome: "+getNome()+"\nIdade: "+getIdade()+"\nSom: "+getSom());
+		System.out.println("\n---Dados da Preguiça---\nNome: "+getNome()+"\nIdade: "+getIdade());
+	}
+	
+	public String getSom() {
+		return ("Som: "+super.getSom());
 	}
 	
 }

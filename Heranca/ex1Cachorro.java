@@ -4,9 +4,9 @@ public class ex1Cachorro extends ex1Animal {
 
 	private boolean correr;
 	
-	public ex1Cachorro(String nome, String som, int idade, boolean correr) {
+	public ex1Cachorro(String nome, int idade, boolean correr) {
 		
-		super(nome, som, idade);
+		super(nome, idade);
 		this.correr=correr;
 		
 	}
@@ -14,7 +14,6 @@ public class ex1Cachorro extends ex1Animal {
 	public boolean isCorrer() {
 		return correr;
 	}
-
 
 	public void setCorrer(boolean correr) {
 		this.correr = correr;
@@ -27,7 +26,11 @@ public class ex1Cachorro extends ex1Animal {
 	}
 	
 	public void imprimirInfo() {
-		System.out.println("\n---Dados do Cachorro---\nNome: "+getNome()+"\nIdade: "+getIdade()+"\nSom: "+getSom());
+		System.out.println("\n---Dados do Cachorro---\nNome: "+getNome()+"\nIdade: "+getIdade());
+	}
+	
+	public String getSom() {
+		return ("Som: "+super.getSom());
 	}
 
 }

@@ -6,10 +6,9 @@ public class ex1Animal {
 	private String som;
 	private int idade;
 	
-	public ex1Animal(String nome, String som, int idade) {
+	public ex1Animal(String nome, int idade) {
 		
 		this.nome=nome;
-		this.som=som;
 		this.idade=idade;
 		
 	}
